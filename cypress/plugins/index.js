@@ -53,7 +53,7 @@ module.exports = (on, config) => {
             .replace(/["]*[{]*[}]*/gi, "")
             .replace(/_/gi, " ");
         const slackData = `{"text":"${newData}"}`;
-        const rpcURL = `https://hooks.slack.com/services/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`;
+        const rpcURL = ``;
         cy.request('POST', rpcURL, slackData).then((response) =>{
             expect(response.status).to.eq(200);
         });
@@ -69,7 +69,7 @@ module.exports = (on, config) => {
 
   //Publishing test execution report to slack
   function publishReportToSlack(jsonBody) {
-    const rpcURL = `https://hooks.slack.com/services/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`;
+    const rpcURL = ``;
     const options = {
         uri: rpcURL,
         method: "POST",
