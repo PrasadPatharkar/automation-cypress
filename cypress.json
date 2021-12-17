@@ -1,0 +1,16 @@
+{
+    "baseUrl": "https://automationteststore.com/",
+    "testFiles": "**/*.{feature,features}",
+    "ignoreTestFiles": ["**/stepDefinitions/*","*.js", "*.md"],  
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": true,
+      "json": true
+    }
+    }
+}

@@ -1,0 +1,10 @@
+node_modules
+reports
+mochawesome-report
+.history
+.vscode
+package-lock.json
+yarn.lock
+.sauce
+cypress/videos/
+cypress/screenshots/
